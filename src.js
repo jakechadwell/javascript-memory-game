@@ -1,11 +1,11 @@
 "use strict";
 (function () {
     $(document).ready(function (){
-        $(".box").mouseenter(function (){
+        $(".box").hover(function (){
             $(this).css("background-color", "lightskyblue");
+        }, function(){
+            $(this).css("background-color", "#6495ed");
         })
-        $(".box").mouseleave(function (){
-            $(this).css("background-color", "cornflowerblue");
-        })
+
     })
 })();
