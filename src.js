@@ -7,5 +7,10 @@
             $(this).css("background-color", "#6495ed");
         })
 
+        $(".box").click(function(){
+            let id = this.id;
+        })
+
+
     })
 })();

@@ -30,3 +30,13 @@
     width: 110%;
     height: 110%;
 }
+.box:active {
+    box-shadow: 5px 5px;
+    transition: all 15ms ease-in-out;
+    transform: scale(1.1);
+}
+.start-button{
+    font-family: 'Oswald', sans-serif;
+    width: 500px;
+    margin: auto 20px auto 0;
+}
