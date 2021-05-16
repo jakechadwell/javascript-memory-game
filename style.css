@@ -1,3 +1,7 @@
+.body{
+    display: flex;
+    flex-direction: column;
+}
 .box{
     height: 100px;
     width: 100px;
@@ -6,12 +10,13 @@
     border-color: midnightblue;
     margin: 1em;
     border-radius: 10%;
+    box-shadow: 0 9px #999;
 }
 .container{
-    display: flex;
     flex-wrap: wrap;
     margin-top: 3em;
     width: 500px;
+    height: 500px;
     justify-content: center;
     align-items: center;
     border-style: solid;
@@ -19,6 +24,9 @@
     border-radius: 10%;
     background-color: aliceblue;
     padding: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
 }
 .navbar-brand{
     font-family: 'Oswald', sans-serif;
@@ -26,17 +34,19 @@
     margin-right: auto;
     margin-left: auto;
 }
-.big{
-    width: 110%;
-    height: 110%;
-}
 .box:active {
-    box-shadow: 5px 5px;
     transition: all 15ms ease-in-out;
-    transform: scale(1.1);
+    transform: translateY(6px);
+    box-shadow: 0 3px #666;
 }
 .start-button{
     font-family: 'Oswald', sans-serif;
     width: 500px;
-    margin: auto 20px auto 0;
+    height: 50px;
+    font-size: x-large;
+    margin: 30px 0 0 0;
+}
+.btn:active{
+    transition: all 15ms ease-in-out;
+    transform: translateY(3px);
 }
