@@ -51,6 +51,14 @@
     transform: translateY(3px);
 }
 .simon-square{
+    transition: .1s;
+    transition-timing-function: ease-out;
     transform: scale(1.2);
     background: lightskyblue;
+}
+.un-simon-square{
+    transition: .1s;
+    transition-timing-function: ease;
+    transform: scale(1);
+    background: #6495ed;
 }
