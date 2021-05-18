@@ -1,6 +1,6 @@
 "use strict";
 (function () {
-    let counter = 1;
+    let counter = 2;
 
     $(document).ready(function (){
         $(".box").hover(function (){
@@ -15,10 +15,6 @@
             }
         });
 
-        $(".box").click(function (){
-
-        })
-
     });
 
     function simonSquares(){
@@ -26,7 +22,7 @@
         console.log(simonChoice+1);
         let selectedSquare = document.getElementById(simonChoice+1);
         $(selectedSquare).toggleClass("simon-square");
-        let delay = 2000;
+        let delay = 1000;
         let timeoutId = setTimeout(function(){
             $(selectedSquare).toggleClass("un-simon-square");
         }, delay);
@@ -35,16 +31,12 @@
     function getIdClicked(){
         $(".box").click(function(){
             let id = this.id;
-        })
+        });
     }
 
     function match(simonChoice){
         let userInput = getIdClicked();
-        if(userInput==simonChoice+1){
-            return userInput;
-        }else{
-            alert("Sorry, that is incorrect. You lasted: " + counter + " rounds!")
-        }
+        return userInput===(simonChoice+1);
     }
 
 })();
